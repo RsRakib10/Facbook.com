@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook-Like App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Facebook-Like App</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#reels">Reels</a></li>
+        <li><a href="#friends">Friends</a></li>
+        <li><a href="#posts">Posts</a></li>
+        <li><a href="#chat">Chat</a></li>
+      </ul>
+    </nav>
+
+    <!-- Stories Section -->
+    <section id="story" class="stories-section">
+      <h2>Stories</h2>
+      <div class="story-container">
+        <div class="story"><img src="https://via.placeholder.com/150" alt="Story 1"><p>John's Story</p></div>
+        <div class="story"><img src="https://via.placeholder.com/150" alt="Story 2"><p>Alice's Story</p></div>
+        <div class="story"><img src="https://via.placeholder.com/150" alt="Story 3"><p>Bob's Story</p></div>
+      </div>
+    </section>
+
+    <!-- Reels Section -->
+    <section id="reels" class="reels-section">
+      <h2>Reels</h2>
+      <div class="reels-container">
+        <div class="reel">
+          <video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></video>
+          <p>John's Reel</p>
+        </div>
+        <div class="reel">
+          <video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></video>
+          <p>Alice's Reel</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Friend Request Section -->
+    <section id="friends" class="friends-section">
+      <h2>Friend Requests</h2>
+      <div class="friend-request">
+        <p>John sent you a friend request</p>
+        <button>Accept</button><button>Decline</button>
+      </div>
+      <div class="friend-request">
+        <p>Alice sent you a friend request</p>
+        <button>Accept</button><button>Decline</button>
+      </div>
+    </section>
+
+    <!-- Posts Section -->
+    <section id="posts" class="posts-section">
+      <h2>Posts</h2>
+      <div class="post">
+        <p>John posted: "Hello, everyone!"</p>
+        <button>Like</button><button>Comment</button>
+      </div>
+      <div class="post">
+        <p>Alice posted: "Having a great day!"</p>
+        <button>Like</button><button>Comment</button>
+      </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat" class="chat-section">
+      <h2>Chat</h2>
+      <div class="chat">
+        <p><strong>John:</strong> Hey! How are you?</p>
+        <p><strong>Alice:</strong> I'm good! You?</p>
+        <input type="text" placeholder="Type a message...">
+        <button>Send</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

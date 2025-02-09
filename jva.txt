@@ -1,0 +1,44 @@
+// JavaScript to handle basic interactivity such as Friend Request, Like, and Chat messages
+
+// Handle Friend Requests
+const acceptButtons = document.querySelectorAll('.friend-request button:nth-child(1)');
+const declineButtons = document.querySelectorAll('.friend-request button:nth-child(2)');
+
+acceptButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    alert('Friend Request Accepted');
+  });
+});
+
+declineButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    alert('Friend Request Declined');
+  });
+});
+
+// Handle Like button click on posts
+const likeButtons = document.querySelectorAll('.post button:nth-child(1)');
+likeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    alert('Liked the Post');
+  });
+});
+
+// Handle Comment button click on posts
+const commentButtons = document.querySelectorAll('.post button:nth-child(2)');
+commentButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    alert('Commented on the Post');
+  });
+});
+
+// Handle Chat Send message
+const sendButton = document.querySelector('.chat button');
+sendButton.addEventListener('click', () => {
+  const message = document.querySelector('.chat input').value;
+  if (message) {
+    alert('Message Sent: ' + message);
+  } else {
+    alert('Please type a message');
+  }
+});
